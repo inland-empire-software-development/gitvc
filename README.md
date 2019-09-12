@@ -1,11 +1,15 @@
+//I am making a change
+
 # Version Control with Git and GitHub - Basics
-This repository is meant to help guide you in using the basic Git commands while working with version control in a team environment. 
+
+This repository is meant to help guide you in using the basic Git commands while working with version control in a team environment.
 
 ## Getting Started
 
 Download the following:
-- [Git](https://git-scm.com/downloads "Git Download")
-- [Github Desktop](https://desktop.github.com/ "GitHub Destop Download")
+
+-   [Git](https://git-scm.com/downloads 'Git Download')
+-   [Github Desktop](https://desktop.github.com/ 'GitHub Destop Download')
 
 If you haven't configured the author name and email address to be used with your commits, you can do so with the following comands.
 
@@ -15,7 +19,8 @@ Note Git strips some characters (for example trailing periods) from user.name.
 
 `git config --global user.email sam@example.com`
 
-------------
+---
+
 ### Repositories
 
 Create a new local repository
@@ -33,6 +38,7 @@ For a remote server, use:
 `git clone username@host:/path/to/repository`
 
 ### Add files
+
 Add one or more files to staging (index):
 
 `git add <filename>`
@@ -41,7 +47,8 @@ Add one or more files to staging (index):
 
 `git add .`
 
-### Commit	
+### Commit
+
 Commit changes to head (but not yet to the remote repository):
 
 `git commit -m "Commit message"`
@@ -51,30 +58,34 @@ Commit any files you've added with git add, and also commit any files you've cha
 `git commit -a`
 
 ### Push
+
 Send changes to the master branch of your remote repository:
 
 `git push origin master`
 
 ### Status
+
 List the files you've changed and those you still need to add or commit:
 
 `git status`
 
 ### Connect to a remote repository
+
 If you haven't connected your local repository to a remote server, add the server to be able to push to it:
 
 `git remote add origin <remote_repo_url>`
 `git push --all origin`
 
-To set this as the default origin, you can do: 
+To set this as the default origin, you can do:
 
 `git push --all --set-upstream origin`
 
-List all currently configured remote repositories:	
+List all currently configured remote repositories:
 
 `git remote -v`
 
 ### Branches
+
 Create a new branch and switch to it:
 
 `git checkout -b <branchname>`
@@ -104,11 +115,13 @@ Delete a branch on your remote repository:
 `git push origin :<branchname>`
 
 ### Update from the remote repository
+
 Fetch and merge changes on the remote server to your working directory:
 
 `git pull`
 
 ### Merging
+
 To merge a different branch into your active branch:
 
 `git merge <branchname>`
@@ -129,7 +142,8 @@ After you have manually resolved any conflicts, you mark the changed file:
 
 `git add <filename>`
 
-### Tags 
+### Tags
+
 You can use tagging to mark a significant changeset, such as a release:
 
 `git tag 1.0.0 <commitID>`
@@ -139,6 +153,7 @@ Push all tags to remote repository:
 `git push --tags origin`
 
 ### Logging
+
 CommitId is the leading characters of the changeset ID, up to 10, but must be unique. Get the ID using:
 
 `git log`
@@ -151,8 +166,8 @@ Render a text-based graphical representation of the commit history.
 
 `git log --graph`
 
-
 ### Undo local changes
+
 This will checkout the file from HEAD, overwriting your change:
 
 `git checkout -- <filename>`
@@ -163,6 +178,7 @@ To drop all your local changes and commits, fetch the latest history from the se
 `git reset --hard origin/master`
 
 ### Stashing
+
 Stashing takes the dirty state of your working directory — that is, your modified tracked files and staged changes — and saves it on a stack of unfinished changes that you can reapply at any time.
 
 To stash changes
@@ -199,7 +215,7 @@ Search the working directory for foo():
 
 Delete a commit locally
 
-Example: 
+Example:
 
 `git log --pretty=oneline --abbrev-commit`
 
@@ -254,13 +270,12 @@ Basic Flow
 
 ![Basic Flow](https://raw.githubusercontent.com/inland-empire-software-development/gitvc/master/images/basic-flow.png)
 
-
 Commit Referencing
 
 ![Commit Referencing](https://raw.githubusercontent.com/inland-empire-software-development/gitvc/master/images/commit-referencing.jpg)
 
-------------
+---
 
 Credits:
-[List of basic commands](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html "List of basic commands") - Atlassian 
-[Deleting a Commit](https://ncona.com/2011/07/how-to-delete-a-commit-in-git-local-and-remote/ "Deleting a Commit") - Ncona
+[List of basic commands](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html 'List of basic commands') - Atlassian
+[Deleting a Commit](https://ncona.com/2011/07/how-to-delete-a-commit-in-git-local-and-remote/ 'Deleting a Commit') - Ncona
