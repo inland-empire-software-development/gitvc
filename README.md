@@ -34,6 +34,11 @@ For a remote server, use:
 
 `git clone username@host:/path/to/repository`
 
+Another change made to the file to try and make issues problems
+
+More changes to create more issues with the files. 
+Lorem ipsum change
+
 ### Add files
 Add one or more files to staging (index):
 
