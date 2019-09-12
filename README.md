@@ -3,6 +3,7 @@ Scott Parker NO NAME name removed
 This repository is meant to help guide you in using the basic Git commands while working with version control in a team environment. 
 
 ## Getting Started
+Something added here to try and make issues
 
 Download the following:
 - [Git](https://git-scm.com/downloads "Git Download")
@@ -32,6 +33,11 @@ Create a working copy of a local repository:
 For a remote server, use:
 
 `git clone username@host:/path/to/repository`
+
+Another change made to the file to try and make issues problems
+
+More changes to create more issues with the files. 
+Lorem ipsum change
 
 ### Add files
 Add one or more files to staging (index):
