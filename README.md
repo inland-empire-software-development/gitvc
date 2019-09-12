@@ -3,6 +3,7 @@ Scott Parker NO NAME name removed
 This repository is meant to help guide you in using the basic Git commands while working with version control in a team environment. 
 
 ## Getting Started
+Something added here to try and make issues
 
 Download the following:
 - [Git](https://git-scm.com/downloads "Git Download")
